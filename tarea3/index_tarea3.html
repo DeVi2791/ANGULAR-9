@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,user-scalable=no">
+		<meta name="author" content="Denisse Villamar">
+		<!-- Los selectores son un conjunto de expresiones que sirven para referirnos a los elementos del DOM/-->
+        <link rel="stylesheet" href="css/estilos.css" media="screen" title="no title" charset="utf-8">
+        <script type="text/javascript" src="js/execTarea.js"></script>
+        <title>
+            TAREA 3 :: Unificada
+        </title>
+	</head>
+	<body id="Contenedor">
+        <header id="banner" class="body">
+            <!-- Título de la página -->
+            <h1><a href="#">TAREA 3 <strong>+++ UNIFICADA +++</strong></a></h1>
+            <!-- Barra de menú -->
+            <nav>
+                <ul>
+                    <li class="active"><a href="#header">Inicio</a></li>
+                    <li><a href="#resumen">Resumen</a></li>
+                    <li><a href="#sec2">Bloques</a></li>
+                    <li><a href="#sec3">Responsive</a></li>
+                    <li><a href="#sec4">TYPESCRIPT</a></li>
+                </ul>
+            </nav>
+        </header>
+       
+        <br/>
+        <div id="resumen" class="seccion">
+            <h2>SECCION 1 :: RESUMEN CSS3</h2>
+            El contenido fue:
+            <ul class="content-list">
+                <li>Selectores</li>
+                <li>Diferencias entre id y class</li>
+                <li>Modelos de Cajas</li>
+                <li>Listas</li>
+                <li>Tablas</li>
+                <li>Propiedades Float y Clear</li>
+                <li>Investigué otras opciones.</li>
+            </ul>
+            <p>Creo que lo difícil está en las propiedades y sus prioridades
+                puedes decir ahora hará esto, pero no obedece, es frustrante.
+                Se hicieron ejercicios durante la clase, con ayuda del link que
+                se nos proporcionó.
+            </p>
+        </div>
+        <div id="sec2" class="seccion">
+            <div id="separador">
+                <h2>SECCION 2 :: BLOQUES</h2>            
+            </div>    
+            
+            <div class="bloque1">   
+                <ul class="content-list">
+                    <li>Item1</li>
+                    <li>Item2</li>
+                </ul>      
+            </div>
+            <div class="bloque2">
+                <img id="imgs" src="https://sasf.net/FacturacionElectronica/images/xeon/portfolio/sasf.jpg" alt="t2_img_sasf" title="It2_img_sasf"/>
+            </div>           
+            <div class="bloque3">   
+                <p>Cansada</p>     
+            </div>
+        </div>
+        <div id="sec3" class="seccion">
+            <div id="separador">
+                <h2>¿Que se entiende por Responsive?</h2>           
+            </div>           
+        
+            <p>
+                Es una técnica de diseño web utilizada para que cualquier navegador
+                web en cualquier dispositivo, pueda visualizar correctamente el 
+                contenido de la misma.
+            </p>
+        </div>
+        <div id="sec4" class="seccion">
+            <div id="separador">
+                <h2>TYPESCRIPT :: EJERCICIO</h2>           
+            </div> 
+            <form action="">
+                <div class="palindromo">
+                    <h1>Palindromos</h1>
+                    <p>Ingrese texto para verificar si es palindroma:</p>
+                    <input type="text" name="txt_pal">
+                    <br>
+                    <button type="submit" id="bt_palindromo"  onclick="verifPalabra()">Probar</button>
+                    <br>
+                    <p id="resultpalindromo"></p>
+                </div>
+            </form>
+            <div id="separador">
+                <br>          
+            </div> 
+            <form action="">
+                <div id="multiploD3">
+                    <h1>Multiplos de Tres</h1>
+                    <p>Ingrese número para verificar si es múltiplo de tres y está dentro del rango:</p>
+                    <input type="text" name="txt_num">
+                    <br>
+                    <button type="submit" id="bt_multiplo3" onclick="verifNumero()">Probar</button>
+                    <br>
+                    <p id="resultMultiplo3"></p>
+                </div>
+            </form>
+        </div>
+	</body>
+</html>

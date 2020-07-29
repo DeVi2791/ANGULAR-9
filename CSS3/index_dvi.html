@@ -1,0 +1,149 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,user-scalable=no">
+		<meta name="author" content="Denisse Villamar">
+		<!-- Los selectores son un conjunto de expresiones que sirven para referirnos a los elementos del DOM/-->
+		<link rel="stylesheet" href="css/estilos.css" media="screen" title="no title" charset="utf-8">
+        <title>
+            TAREA 2 :: CSS3
+        </title>
+	</head>
+	<body id="Contenedor">
+		<header id="Encabezado">
+			<h1 id="inicio">
+                Curriculum Vitae
+			</h1>
+			<h2>Denisse Beatriz Villamar Herrera</h2>
+			<h3>Guayaquil, 27 de febrero del 1991</h3>
+		</header>
+		<navbar>
+            <ul class="Pestañas">
+                <li><a class="active" id="navbar" href="#inicio">Inicio |</a></li>
+                <li><a id="navbar" href="#ref3">Educación |</a></li>
+            </ul>	
+		</navbar>
+		<section id="Info_Personal">
+			<h2>** Información Personal **</h2>
+			<article id="Foto_carnet">
+				<table border="1">
+                    <tbody>
+						<tr>
+                            <td><img id="imgs" src="data:image/jpeg;base64,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" alt="DeVi2791" title="IDeVi2791"/></td>
+                            <td><p>Graduada de Ingeniería en Telemática en ESPOL. </p>Persona 
+                                responsable, perseverante, creativa, con ganas de seguir 
+                                aprendiendo y superarse, familiarizada con las tecnologías 
+                                actuales para la realización de proyectos informáticos y 
+                                de telecomunicaciones. Organizada, participativa, pro 
+                                activa y comunicativa en grupo de trabajo. Especial 
+                                omodidad en el área de la administración tanto de 
+                                personas como de proyecto asignados. 
+                                Experiencia en Java, arquitectura empresarial, gestores de 
+                                base de Datos, relaciones personales y humanización 
+                                de proyectos.</td>    
+                        </tr>
+					</tbody>    
+                </table>
+			</article>
+			<article id="Perfil">
+				<h2>** Perfil **</h2>
+				<h3>Habilidades</h3>
+				<ul>
+					<li class="itemIndice">Herramientas Informáticas
+						<ul class="habilidades">
+							<li>Microsoft Word/Excel (Intermedio).</li>
+							<li>Microsoft Access.</li>
+							<li>Microsoft Project.</li>
+							<li>LABVIEW (Básico).</li>
+							<li>Cisco Packet Tracer.</li>
+							<li>MPLAB.</li>
+							<li>MICROCPRO</li>
+							<li>Adobe PhotoShop y Corel Draw</li>
+							<li>Eclipse</li>
+						</ul>
+					</li>
+					<li class="itemIndice">Idiomas
+						<ul class="habilidades">
+							<li>Inglés (Intermedio).</li>
+							<li>Italiano (Básico).</li>
+							<li>Fránces (Básico).</li>
+						</ul>
+					</li>
+				</ul>
+			</article>
+        </section>
+        <section id="ref3">
+			<h2>** Educación **</h2>
+			<article>
+				<table border="1">
+					<thead>
+						<tr>
+							<th>Año</th>
+							<th>Institución</th>
+							<th>Lugar</th>
+							<th>¿Culminó?</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td></br></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>				
+						<tr>
+							<td></br></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+					</tbody>
+				</table>				
+			</article>			
+		</section>
+		<section>
+			<form name="formContacto" autocomplete="on">
+				<h2>** Agregar Estudios **</h2>
+				<fieldset>
+					<legend>Datos Personales</legend>
+					<p>
+						<label for="Anio">Año: </label>
+						<select>
+							<option>2016</option>
+							<option>2015</option>
+							<option>2014</option>
+							<option>2013</option>
+							<option>2012</option>
+							<option>2011</option>
+							<option>2010</option>
+						</select>
+						</br>
+					</p>
+					<p>
+						<label for="institucion">Institución: </label>
+						<input type="text" id="institucion">
+						</br>
+					</p>
+					<p>
+						<label for="lugar">Lugar: </label>
+						<input type="text" id="lugar">
+						</br>
+					</p>
+					<p>
+						<label for="culmino">Género: </label>
+						<b>Sí</b><input type="radio" id="culmino">
+						<b>No</b><input type="radio" id="culmino">
+						</br>
+					</p>
+					<input type="submit" value="Enviar">				
+				</fieldset>
+			</form>
+		</section>
+	</body>
+	<footer>
+		<p><b>correo electrónico:</b> de2791vi@gmail.com</p>
+		<p><b>teléfono:</b> 2986540</p>
+		<p><b>redes sociales:</b> @DeVi2791</p>
+	</footer>
+</html>

@@ -1,0 +1,155 @@
+html {
+  display: block;
+}
+body {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: lightcoral;
+    margin-right: 15%;
+    margin-left: 15%;
+    height: 100vh;
+}
+.seccion {
+    color: darkblue;
+    background-color: darkgrey;
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    clear: both;
+}
+.seccion h2{
+  text-align: center;
+  text-decoration: underline;
+}
+.seccion h3{
+  text-align: center;
+  text-decoration: underline;
+}
+#separador {
+  clear: both;
+  text-align: center;
+  font-size: 16px;
+  text-decoration: underline;
+}
+.inicio {
+  padding: 5%;
+  opacity: .8;
+  background: white;
+  color: black;
+  font-weight: bolder;text-align: center;
+}
+#Contenedor
+{
+  font-size: 16px;
+  font-family: helvetica;
+}
+/*
+	Encabezado
+*****************/
+#banner {
+	margin: 0 auto;
+	padding: 2.5em 0 0 0;
+}
+
+	/* Banner */
+	#banner h1 {font-size: 3.571em; line-height: .6;}
+	#banner h1 a:link, #banner h1 a:visited {
+		display: block;
+		font-weight: bold;
+		margin: 0 0 .6em .2em;
+		text-decoration: none;
+		width: 465px;
+	}
+	#banner h1 a:hover, #banner h1 a:active {
+		text-shadow: none;
+	}
+
+	#banner h1 strong {font-size: 0.36em; font-weight: normal;}
+
+	/* Nav Principal*/
+	#banner nav {
+		background: hsl(0, 0%, 21%);
+		font-size: 1.143em;
+		height: 40px;
+		line-height: 30px;
+		margin: 0 auto 2em auto;
+		padding: 0;
+		text-align: center;
+		width: 800px;
+		/*Efecto de esquinas redondas*/
+		border-radius: 5px; /*new - para chrome*/
+		-moz-border-radius:5px; /*new - para mozilla*/
+		-webkit-border-radius: 5px; /* new - para safari*/
+	}
+
+	#banner nav ul {list-style: none; margin: 0 auto; width: 800px;}
+	#banner nav li {float: left; display: inline; margin: 0;}
+
+	#banner nav a:link, #banner nav a:visited {
+		color: #fff;
+		display: inline-block;
+		height: 30px;
+		padding: 5px 1.5em;
+		text-decoration: none;
+	}
+	#banner nav a:hover, #banner nav a:active{
+		border-radius: 15px 10px; /*new*/
+		background: hsla(200, 60%, 50%, 0.65);
+		text-shadow: none !important;
+	}
+	#banner nav .active a:link, #banner nav .active a:visited {
+		border-radius: 15px 10px 6px; /*new*/
+		background: #3399CC;
+		text-shadow: none !important;
+  }
+
+  /*
+  * BLOQUES
+  */
+
+div [class*="bloque"]{
+  min-height: 200px;
+  flex: 1 2 30%;  
+}
+.bloque1{
+  border: 2px solid red;
+  text-align: center;
+  background-color: grey;
+  margin: 2% 0% 2% 1%;
+  float: left;
+  width: 45%;
+  order: 1;
+}
+.bloque2{
+  border: 2px solid violet;
+  text-align: center;
+  background-color: grey;
+  margin: 2% 0% 2% 1%;
+  float: left;
+  width: 45%;
+  order: 2;
+}
+.bloque2 img{
+  width: 50%;
+    height: 50%;
+    border: 1px solid black;
+    background-color: white;
+}
+.bloque3{
+  border: 2px solid yellow;
+  text-align: center;
+  background-color: grey;
+  margin: 2% 0% 2% 1%;
+  float: left;
+  width: 45%;
+  order: 3;
+}
+.sec2{
+  display: flex;
+  flex-flow: row wrap;
+}
+div {
+  display: block;
+}

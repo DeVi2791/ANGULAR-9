@@ -1,0 +1,196 @@
+body
+{
+  background-color: lightgray;
+}
+footer
+{
+  margin-top: 20px;
+}
+img
+{
+  border-radius: 10px;
+}
+#Contenedor
+{
+  font-size: 16px;
+  font-family: helvetica;
+}
+#Encabezado
+{
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  background-color: burlywood;
+}
+#imgs
+{
+  padding-top: 5px;
+  padding-right: 3px;
+  padding-bottom: 5px;
+  padding-left: 4px;
+}
+navbar ul
+{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+.active {
+   background-color: #4CAF50;
+}
+#navbar{
+    float: left;
+}
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.itemIndice
+{
+    list-style-type: upper-roman;
+}
+a[href^='#']
+{
+    color: whitesmoke;
+}
+a[href='http://www.google.com']{}
+img[src$='.svg']
+{
+  border-radius: 50px;
+}
+img[src$='jpg'],img[src$='png']{
+  border: 1px solid black;
+  border-radius: 50px;
+}
+/*todas las etiquetas title con el valor description*/
+[title*="description"]
+*
+{
+    margin: 1vh 1vw;
+}
+/*
+h1+h2 sirve para referenciar un elemento con la condicion estricta
+que el segundo elemento este precedido del primer elemento.
+*/
+h1+h2
+{
+  text-decoration: underline;
+}
+/*
+Selector de Hermanos
+Seleccion todos los elementos que sean hijos de la etiqueta que
+se especifica. Todos los h2 que estén precedidos por h1.
+*/
+h2~article
+{
+  text-align: justify;
+}
+/*
+Selector de Hijos Directos
+Hace referencia a todos los hijos directos de la etiqueta o
+elemento
+*/
+article> p
+{
+  text-decoration:inherit;
+}
+/*
+Funciona igual al anterior excepto que no aplica al primer hijo directo
+*/
+.habilidades
+{
+    list-style: circle;
+}
+/*
+PseudoClases
+*/
+/*
+:visited Es lo contrario de la pseudo-clase :link,
+hace referencia a elementos que tenen
+enlaces y ya fueron visitados alguna vez
+por el usuario.
+*/
+a[href^="http://"]:visited{
+  color: red;
+}
+/*
+:hover
+Se actva cuando pasamos el cursor del
+mouse por encima del elemento.
+*/
+a:hover{
+  color: lightgoldenrodyellow;
+}
+/*
+:first-child
+Hace referencia el primer hijo de un elemento.
+*/
+h2:first-child{
+  text-decoration: underline;
+}
+/*
+:focus
+Es usado solo en los elementos input, ya que
+se actva cuando ponemos el cursor del
+mouse en un cuadro de texto y vamos a
+escribir algo.
+*/
+input:focus{
+  width: 160px;
+  height: 140px;
+}
+/*
+PseudoElementos
+*/
+/*
+::first-leter
+Este pseudo-elemento es usado en
+textos, párrafos y ttulos y hace referencia
+a la primera letra del contenido de dicho
+elemento.
+*/
+p::first-letter{
+  text-transform: capitalize;
+}
+/*
+::first-line
+Este pseudo-elemento se parece a ::first-letter:
+selecciona toda la primera línea del contenido
+del texto.
+*/
+p::first-line{
+  font-size: 18px;
+}
+/*
+::selecton
+Este pseudo-elemento se actva cuando el
+usuario selecciona una porción de texto en
+un elemento, es decir, si tenemos un elemento
+<p> que contene un párrafo y el
+usuario selecciona una parte del párrafo, se
+actvará este pseudo-elemento.
+*/
+p::selection{
+  text-decoration-color: purple;
+}
+table{
+    /*Para evitar la repetición del lineado y se visualiza como cajones
+      se utiliza la propiedad border-collapse con el atributo collapse*/
+    border-collapse: collapse;
+    /*Al asignar un valor de porcentaje a width, este se acomoda a toda la página*/
+    width: 75%;
+}
+table, td, th{
+border: 1px solid black; 
+}
+
+td,th{
+/*Controla ancho y alto de las celdas*/
+width: 100px;
+height: 30px;
+}
